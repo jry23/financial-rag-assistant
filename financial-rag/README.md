@@ -1,6 +1,6 @@
 # Financial RAG — MVP
 
-Weekend build: answer questions about Apple's most recent 10-K using retrieval-augmented generation.
+Goal: answer questions about Apple's most recent 10-K using retrieval-augmented generation.
 
 ## Setup
 
@@ -11,7 +11,7 @@ pip install -r requirements.txt
 export OPENAI_API_KEY=sk-...
 ```
 
-You also need to set a user agent for SEC EDGAR (they require it):
+Set a user agent for SEC EDGAR:
 ```bash
 export SEC_USER_AGENT="Your Name your@email.com"
 ```
@@ -33,7 +33,7 @@ python -m evaluation.run_eval             # runs all questions in evaluation/tes
 
 ## Project layout
 
-Same as the plan. Each module is small and runnable on its own so you can debug one layer at a time.
+Each module is small and runnable on its own so you can debug one layer at a time.
 
 ## Notes on what's deliberately NOT here (yet)
 
@@ -42,4 +42,4 @@ Same as the plan. Each module is small and runnable on its own so you can debug 
 - No query rewriting. Same.
 - No structured data (GARCH/PCA) fusion. That's the v2 differentiator.
 
-The point of v1 is to have a working baseline + an eval set, so you can measure whether v2 changes actually help.
+The point of v1 is to have a working baseline + an eval set, so we can measure whether v2 changes actually help.
