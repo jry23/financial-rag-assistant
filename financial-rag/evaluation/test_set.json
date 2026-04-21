@@ -1,0 +1,72 @@
+[
+  {
+    "id": "q01",
+    "question": "What was Apple's total net sales for the most recent fiscal year?",
+    "expected": "A dollar figure from the income statement (Item 8). Should cite a section in Item 7 (MD&A) or Item 8.",
+    "expected_sections": ["item_7", "item_8"],
+    "type": "factual_numeric"
+  },
+  {
+    "id": "q02",
+    "question": "What are Apple's primary reportable operating segments?",
+    "expected": "Geographic segments: Americas, Europe, Greater China, Japan, Rest of Asia Pacific.",
+    "expected_sections": ["item_1", "item_7", "item_8"],
+    "type": "factual"
+  },
+  {
+    "id": "q03",
+    "question": "What risks does Apple identify related to its supply chain concentration in China?",
+    "expected": "Discussion of manufacturing concentration, geopolitical risk, tariffs, supplier dependency.",
+    "expected_sections": ["item_1a"],
+    "type": "analytical"
+  },
+  {
+    "id": "q04",
+    "question": "How does Apple describe competition in the smartphone market?",
+    "expected": "Description of competitive pressure, price/feature competition, major competitors.",
+    "expected_sections": ["item_1", "item_1a"],
+    "type": "analytical"
+  },
+  {
+    "id": "q05",
+    "question": "What were Apple's R&D expenses and how did they change year over year?",
+    "expected": "Dollar amount and directional change (up/down, %).",
+    "expected_sections": ["item_7", "item_8"],
+    "type": "factual_numeric"
+  },
+  {
+    "id": "q06",
+    "question": "What legal proceedings is Apple currently involved in that could be material?",
+    "expected": "Mention of specific litigation disclosed in Item 3 or notes.",
+    "expected_sections": ["item_3", "item_8"],
+    "type": "factual"
+  },
+  {
+    "id": "q07",
+    "question": "How much did Apple return to shareholders through buybacks and dividends?",
+    "expected": "Dollar figures for buybacks and dividends, likely in MD&A or cash flow discussion.",
+    "expected_sections": ["item_5", "item_7", "item_8"],
+    "type": "factual_numeric"
+  },
+  {
+    "id": "q08",
+    "question": "What does Apple say about artificial intelligence in this filing?",
+    "expected": "Whatever AI-related disclosure is present (product features, R&D, risks).",
+    "expected_sections": ["item_1", "item_1a", "item_7"],
+    "type": "analytical"
+  },
+  {
+    "id": "q09",
+    "question": "What is Apple's stock ticker on the Brazilian stock exchange?",
+    "expected": "The filing should NOT contain this. System should refuse.",
+    "expected_sections": [],
+    "type": "should_refuse"
+  },
+  {
+    "id": "q10",
+    "question": "What critical accounting estimates does Apple highlight?",
+    "expected": "Discussion of estimates like warranty, income taxes, inventory valuation.",
+    "expected_sections": ["item_7", "item_8"],
+    "type": "analytical"
+  }
+]
