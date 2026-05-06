@@ -1,7 +1,6 @@
 """Embed chunks with OpenAI and build a FAISS index.
 
 Uses cosine similarity via normalized vectors on an IndexFlatIP (inner product).
-Fine up to ~100k chunks; swap for IndexHNSWFlat or a managed store later.
 """
 from __future__ import annotations
 import json

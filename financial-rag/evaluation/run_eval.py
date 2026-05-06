@@ -3,7 +3,7 @@
 Two metrics:
 1. RETRIEVAL: did at least one retrieved chunk come from an expected section?
    This is a coarse proxy for precision@k that you can compute without
-   hand-labeling every chunk. Good enough for a weekend.
+   hand-labeling every chunk.
 2. ANSWER QUALITY: LLM-as-judge grades correctness / groundedness / refusal
    behavior on a 1-5 scale.
 
