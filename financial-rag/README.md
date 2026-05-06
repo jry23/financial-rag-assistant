@@ -11,7 +11,7 @@ pip install -r requirements.txt
 export OPENAI_API_KEY=sk-...
 ```
 
-You also need to set a user agent for SEC EDGAR (they require it):
+Set a user agent for SEC EDGAR:
 ```bash
 export SEC_USER_AGENT="Your Name your@email.com"
 ```
